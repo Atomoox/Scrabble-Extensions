@@ -6,6 +6,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 public class Plateau {
     private Case [][] g; // g pour grille
     private ArrayList<String> dico = new ArrayList<String>();
+
     public Plateau() {
         initDico();
         int[][] plateau = {
@@ -32,6 +33,10 @@ public class Plateau {
                 this.g[i][j] = new Case(plateau[i][j]);
             }
         }
+    }
+
+    public Plateau (Case[][] plateau) {
+        this.g = plateau;
     }
 
     private void initDico() {
