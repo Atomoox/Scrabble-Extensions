@@ -36,6 +36,7 @@ public class Plateau {
     }
 
     public Plateau (Case[][] plateau) {
+        initDico();
         this.g = plateau;
     }
 
